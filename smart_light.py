@@ -52,12 +52,12 @@ def turn_off():
     device = connect_to_device()
     device.turn_off()   
 
-color_button = Button(root, text="Wybierz kolor", command=choose_color).pack()
-white_button = Button(root, text="Biały", command=white).pack()
+color_button = Button(root, text="Choose color", command=choose_color).pack()
+white_button = Button(root, text="White", command=white).pack()
 brightness_slider = Scale(root, from_=25, to=255, orient=HORIZONTAL)
 brightness_slider.pack()
-brightness_button = Button(root, text="Zmień jasność", command=change_brightness).pack()
-turn_on_button = Button(root, text="Włącz", command=turn_on).pack()
-turn_off_button = Button(root, text="Wyłącz", command=turn_off).pack()
+brightness_button = Button(root, text="Change brightness", command=change_brightness).pack()
+turn_on_button = Button(root, text="On", command=turn_on).pack()
+turn_off_button = Button(root, text="Off", command=turn_off).pack()
 root.mainloop()
     
