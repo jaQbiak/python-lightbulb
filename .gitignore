@@ -1,7 +1,4 @@
 .env
-setup.py
-dist
-build
 .DS_Store
 .idea
 .eggs
