@@ -1,4 +1,4 @@
-# python-lightbulb
+# Python Smartlight
 Simple application to control lightbulb
 
 
