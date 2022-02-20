@@ -1,4 +1,4 @@
-from tkinter import Button, colorchooser, Scale, Label
+from tkinter import Button, colorchooser, Scale
 from tkinter.constants import HORIZONTAL
 from dotenv import load_dotenv
 
