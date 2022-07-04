@@ -39,7 +39,7 @@ def normal():
 
 @application.route("/white")
 def white():
-    DEVICE.set_hsv(h=1, s=0, v=1)
+    DEVICE.set_hsv(h=0.5, s=0, v=1)
     return redirect(url_for('status'))
 
 
