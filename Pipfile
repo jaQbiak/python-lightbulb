@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 tinytuya = "*"
 python-dotenv = "*"
+pylint = "*"
+flask = "*"
 
 [dev-packages]
 
