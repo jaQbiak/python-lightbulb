@@ -14,6 +14,11 @@ application = Flask(__name__)
 
 
 @application.route("/")
+def status():
+    return f"Device status {DEVICE.status()}"
+
+
+@application.route("/turn_on")
 def turn_on():
     DEVICE.turn_on()
     return "Device turned on"
