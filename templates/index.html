@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart light</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <main>
+    {% if turned %}
+      <h1 style="color: #6BD425">Turned on! <a class="turn_off" href="{{ url_for('turn_off') }}">Turn off</a></h1>
+      <a class="normal" href="{{ url_for('normal') }}">Normal</a>
+      <a class="white" href="{{ url_for('white') }}">White</a>
+      <a class="red" href="{{ url_for('change_color', red=red, green=green, blue=blue) }}/255/0/0">Red</a>
+      <a class="green" href="{{ url_for('change_color', red=red, green=green, blue=blue) }}/0/255/0">Green</a>
+      <a class="blue" href="{{ url_for('change_color', red=red, green=green, blue=blue) }}/0/0/255">Blue</a>
+    {% else %}
+      <h1 style="color: #EE4266">Turned off! <a class="turn_on"" href="{{ url_for('turn_on') }}">Turn on</a></h1>
+    {% endif %}
+  </main>
+</body>
+</html>

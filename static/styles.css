@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #03012C;
+    font-family: "Koulen", cursive;
+}
+
+main {
+    width: 70vw;
+    height: 100%;
+    font-size: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: menulist-button;
+    padding: 1vw;
+}
+
+a:hover {
+    color: white;
+}
+
+.turn_on, .turn_off {
+    color: white;
+}
+
+.turn_on:hover {
+    color: white;
+    background: #6BD425;
+}
+
+.turn_off:hover {
+    color: white;
+    background: red;
+}
+
+.normal {
+    color: #F19A3E;
+}
+
+.normal:hover {
+    background: #F19A3E;
+    color: white;
+}
+
+.white {
+    color: white;
+}
+
+.white:hover {
+    background: white;
+    color: black;
+}
+
+.red {
+    color: red;
+}
+
+.red:hover {
+    background: red;
+    color: white;
+}
+
+.green {
+    color: green;
+}
+
+.green:hover {
+    background: green;
+    color: white;
+}
+
+.blue {
+     color: blue;
+}
+
+.blue:hover {
+    background: blue;
+    color: white;
+}
