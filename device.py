@@ -12,6 +12,5 @@ class Device:
     def get_device(self):
         device = tinytuya.BulbDevice(self.device_id, self.ip_address, self.locale_key)
         device.set_version(3.3)
-        print(device)
         return device
 

@@ -8,6 +8,7 @@ tinytuya = "*"
 python-dotenv = "*"
 pylint = "*"
 flask = "*"
+gunicorn = "*"
 
 [dev-packages]
 

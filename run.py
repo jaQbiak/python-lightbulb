@@ -10,16 +10,16 @@ load_dotenv()
 
 DEVICE = Device(os.getenv("DEVICE_ID"), os.getenv("IP_ADDRESS"), os.getenv("LOCALE_KEY")).get_device()
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 
-@app.route("/")
+@application.route("/")
 def turn_on():
     DEVICE.turn_on()
     return "Device turned on"
 
 
-@app.route("/turn_off")
+@application.route("/turn_off")
 def turn_off():
     DEVICE.turn_off()
     return "Device turned off"
