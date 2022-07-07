@@ -30,8 +30,12 @@ a:hover {
     color: white;
 }
 
-.turn_on, .turn_off {
-    color: white;
+.turn_on {
+    color: #6BD425;
+}
+
+.turn_off {
+    color: #EE4266;
 }
 
 .turn_on:hover {
