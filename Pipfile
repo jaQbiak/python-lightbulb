@@ -7,8 +7,8 @@ name = "pypi"
 tinytuya = "*"
 python-dotenv = "*"
 pylint = "*"
-flask = "*"
-gunicorn = "*"
+flet = "*"
+pyinstaller = "*"
 
 [dev-packages]
 
