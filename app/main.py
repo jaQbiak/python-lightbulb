@@ -1,5 +1,3 @@
-import os
-
 from dotenv import load_dotenv
 import flet as ft
 from flet import Switch, IconButton
@@ -10,7 +8,11 @@ from device import Device
 
 load_dotenv()
 
-DEVICE = Device(os.getenv("DEVICE_ID"), os.getenv("IP_ADDRESS"), os.getenv("LOCALE_KEY")).get_device()
+DEVICE = Device(
+    device_id="ID OF YOUR DEVICE",
+    ip_address="IP OF YOUR DEVICE",
+    locale_key="LOCALE KEY OF YOUR DEVICE",
+).get_device()
 
 def main(page: ft.Page):
     page.title = "Smart light"
